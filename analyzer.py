@@ -1,3 +1,5 @@
+# Analyzes posts and identifies the most active user.
+# asdasdas
 def analyze_posts(posts):
  if posts:
      counter={}
