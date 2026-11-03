@@ -1,0 +1,9 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Generated project outputs
+posts.json
+posts.csv
+report.json
+filer_posts.json
