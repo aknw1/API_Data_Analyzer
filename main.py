@@ -18,9 +18,10 @@ def main():
             if analysis is not None:
                 print(f"Total Posts: {analysis['total_posts']}")
                 print(f"User Counts: {analysis['user_counts']}")
-                print(f"Most Active User: {analysis['most_active_user']}")
+                print(f"Most Active User ID: {analysis['most_active_user']}")
+                print(f"Least Active User ID: {analysis['min_active_user']}")
                 save_posts_status=save_posts(filter_posts,'posts.json')
-                print(f"were posts saved: {save_posts_status}")
+                print(f"posts saved: {save_posts_status}")
                 csv_status=save_posts_csv(filter_posts,"posts.csv",posts_header)
                 print(f"CSV saved successfully: {csv_status}")
                 report={

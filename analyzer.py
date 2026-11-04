@@ -11,11 +11,13 @@ def analyze_posts(posts):
          else:
              counter[user_id] = 1
      most_active_user = max(counter, key=counter.get)
+     min_active_user=min(counter, key=counter.get)
 
      return {
     "total_posts": len(posts),
     "user_counts": counter,
-    "most_active_user": most_active_user
+    "most_active_user": most_active_user,
+    "min_active_user": min_active_user
     }
 
  else:
