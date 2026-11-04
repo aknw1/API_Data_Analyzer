@@ -7,7 +7,9 @@ def fetch_posts():
 
         if response.status_code==200:
             data=response.json()
+
             print(f"API request succeeded: {response.status_code}")
+
             return data
         else:
             return None
